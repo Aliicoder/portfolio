@@ -32,8 +32,8 @@ function TechStack() {
   },[])
   return (
     <div>
-      <div className="p-12">
-        <div className="px-2  relative flex justify-center w-fit ">
+      <div className="p-6 py-12">
+        <div className="relative flex justify-center w-fit ">
           <h1 className="relative c8  font-semibold z-20 
             md:c4">
             {t("headers.myTech")} 
@@ -44,32 +44,32 @@ function TechStack() {
 
       <div className=" mx-[10%] relative wrapper  flex overflow-x-auto pointer-events-none ">
         <div  ref={bigWrapperRef}  className='topPartnerWrapper flex w-full h-full'>
-          <div className=" basis-2/12  md:basis-1/4  p-[5%] shrink-0  flex justify-center items-center">
+          <div className=" p-6 basis-2/12  md:basis-1/4  shrink-0  flex justify-center items-center">
             <React/>
           </div> 
-          <div className="basis-2/12  md:basis-1/4    p-[5%] shrink-0 flex justify-center items-center">
+          <div className=" p-6 | basis-2/12  md:basis-1/4  shrink-0 flex justify-center items-center">
             <Mongo/>
           </div>
-          <div className=" basis-2/12  md:basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+          <div className=" p-6 | basis-2/12  md:basis-1/4  shrink-0 flex justify-center items-center">
             <Express/>
           </div>
-          <div className="basis-2/12  md:basis-1/4  p-[5%] shrink-0 flex justify-center items-center">
+          <div className=" p-6 | basis-2/12  md:basis-1/4 shrink-0 flex justify-center items-center">
             <Node/>
           </div>  
 
           <div
             style={{right: "var(--big-wrapper-width)"}}  
             className={`absolute flex w-full   h-full pointer-events-none`}>
-            <div className=" basis-2/12  md:basis-1/4  p-[5%] shrink-0  flex justify-center items-center">
+            <div className="p-6 |  basis-2/12  md:basis-1/4  shrink-0  flex justify-center items-center">
               <React/>
             </div> 
-            <div className=" basis-2/12  md:basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className="p-6 |  basis-2/12  md:basis-1/4   shrink-0 flex justify-center items-center">
               <Mongo/>
             </div>
-            <div className=" basis-2/12  md:basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className=" p-6 | basis-2/12  md:basis-1/4   shrink-0 flex justify-center items-center">
               <Express/>
             </div>
-            <div className=" basis-2/12  md:basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className=" p-6 | basis-2/12  md:basis-1/4   shrink-0 flex justify-center items-center">
               <Node />
             </div>
           </div>
@@ -78,32 +78,32 @@ function TechStack() {
       
       <div className="mx-[20%] relative  flex wrapper  overflow-x-auto   pointer-events-none">
         <div ref={smallWrapperRef} className='downPartnerWrapper flex w-full h-full'>
-          <div className=" basis-1/4  p-[5%] shrink-0  flex justify-center items-center">
+          <div className=" p-6 | basis-1/4   shrink-0  flex justify-center items-center">
             <Aws/>
           </div> 
-          <div className="basis-1/4    p-[5%] shrink-0 flex justify-center items-center">
+          <div className="p-6 | basis-1/4     shrink-0 flex justify-center items-center">
             <Git/>
           </div>
-          <div className=" basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+          <div className="p-6 | basis-1/4    shrink-0 flex justify-center items-center">
             <Docker/>
           </div>
-          <div className="basis-1/4    p-[5%] shrink-0 flex justify-center items-center">
+          <div className="p-6 | basis-1/4     shrink-0 flex justify-center items-center">
             <Github/>
           </div>   
 
           <div  
             style={{right: "var(--small-wrapper-width)"}}  
             className={`absolute flex w-full h-full pointer-events-none`}>
-            <div className=" basis-1/4  p-[5%] shrink-0  flex justify-center items-center">
+            <div className="p-6 | basis-1/4 shrink-0  flex justify-center items-center">
               <Aws/>
             </div> 
-            <div className=" basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
               <Git/>
             </div>
-            <div className=" basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
               <Docker/>
             </div>
-            <div className=" basis-1/4   p-[5%] shrink-0 flex justify-center items-center">
+            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
               <Github />
             </div>
           </div>

@@ -11,18 +11,18 @@ function Hero({className}:IHero) {
   return (
     <FlexRow className={`${className}  `}>
 
-      <FlexCol className=" relative  basis-full  | justify-center items-center
+      <FlexCol className="relative basis-full | justify-center items-center
         md:basis-1/2">
         <img className="z-10" src="/index/main.png" alt="" />
       </FlexCol>
 
-      <FlexCol className="mt-10 basis-full md:basis-1/2 justify-center ">
+      <FlexCol className="mt-10 basis-full md:basis-1/2 justify-center">
         <FlexCol className="py-3">
-          <h1 className=" c9  font-semibold 
+          <h1 className="c9 font-semibold 
             md:c8">
             {t("intro.name")}
           </h1>
-          <FlexCol className="py-3  h-fit">
+          <FlexCol className="py-3 h-fit">
             <h1 className="c7 pb-3 font-semibold
               md:c6">
               {t("intro.title")}
@@ -34,8 +34,8 @@ function Hero({className}:IHero) {
           </FlexCol>
         </FlexCol>
         
-        <div className="py-[8%] flex gap-6 mx-auto md:m-0 flex-col-reverse  md:flex-row  w-fit ">
-
+        <FlexCol className="py-12 gap-6 mx-auto | w-fit  flex-col-reverse 
+          md:flex-row md:m-0">
           <CustomButton text={t("buttons.downloadCV")} 
             className=" c6 p-3 gap-3 flex items-center  shadow-none rounded-lg border
               md:c3 md:p-2   ">
@@ -43,9 +43,9 @@ function Hero({className}:IHero) {
           <CustomButton text={t("buttons.contact")} 
             className=" c6 p-3 gap-3 flex items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border
               md:c3 md:p-2  ">
-            <FaArrowRight />
+            <FaArrowRight className="rtl:-scale-x-100" />
           </CustomButton>
-        </div>
+        </FlexCol>
       </FlexCol>
 
   </FlexRow>

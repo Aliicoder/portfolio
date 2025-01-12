@@ -10,7 +10,7 @@ function MyServices() {
   const [t] = useTranslation()
   return (
     <div className="">
-    <div className="p-[6%]">
+    <div className="p-6 py-12">
       <div className="px-[1%]  relative flex justify-center w-fit ">
         <h1 className="relative c8 md:c4 font-semibold z-20 ">{t("headers.myServices")}</h1>
         <div className="absolute bottom-0 h-2 w-full z-10 bg-[var(--tertiary-background-color)]" />

@@ -13,32 +13,37 @@ function Menu({className}:IMenu) {
   useEffect(()=>{
     localStorage.setItem('language', language)
   },[language])
-  useEffect(()=>{
-    console.log(darkTheme)
-  },[darkTheme])
+  useEffect(() => {
+    localStorage.setItem("language", language);
+    document.documentElement.setAttribute("dir", language === "ar" ? "rtl" : "ltr")
+  }, [language]);
+
   return (
     <FlexRow  className={`${className} items-center justify-end`}>
-
-      <h1 className=" mr-auto ml-10 c5 font-semibold">
-        alicoder
-        <span className="text-[--tertiary-background-color]">.</span>
-      </h1>
 
       <FlexRow className=" gap-6 px-3 py-2 sticky top-6  | rounded-xl items-center border border-slate-900 bg-[var(--blur-color)]">
 
         <FlexRow className="gap-6 ">
           <div 
             onClick={()=>changeLanguage("en")}
-            className={`${language == "en" ? "font-bold":""} px-[1%] relative flex justify-center w-fit cursor-pointer `}>
+            className={`px-[1%] relative flex justify-center w-fit cursor-pointer `}>
             <h1 className="relative c8 md:c4 z-20 text-whit">English</h1>
+            { 
+            language == "en" && <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
+            }
           </div>
           <div 
             onClick={()=>changeLanguage("ar")}
-            className={`${language == "ar" ? "font-bold":""} aref-ruqaa px-[1%] relative flex justify-center w-fit cursor-pointer `}>
+            className={ `aref-ruqaa px-[1%] relative flex justify-center w-fit cursor-pointer `}>
             <h1 className="relative c8 md:c4 z-20 text-whit"> عربي</h1>
+            { 
+            language == "ar" && <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
+            }
           </div>
         </FlexRow>
-        <div onClick={()=>setDarkTheme(prev => !prev)} className=" p-3 | flex justify-center items-center cursor-pointer  " >
+        <div onClick={()=>setDarkTheme(prev => !prev)} 
+          className={` ${ darkTheme ? "bg-[#ffffff05]" : "bg-slate-50" }
+            p-3 | flex justify-center items-center cursor-pointer  rounded-full `} >
           {
             darkTheme ?
             <CiLight />
