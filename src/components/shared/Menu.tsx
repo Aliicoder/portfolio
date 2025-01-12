@@ -19,11 +19,14 @@ function Menu({className}:IMenu) {
   }, [language]);
 
   return (
-    <FlexRow  className={`${className} items-center justify-end`}>
+    <FlexRow  className={`${className} items-center justify-end
+      rtl:flex-row-reverse`}>
 
-      <FlexRow className=" gap-6 px-3 py-2 sticky top-6  | rounded-xl items-center border border-slate-900 bg-[var(--blur-color)]">
+      <FlexRow className=" gap-6 px-3 py-2 sticky top-6  | rounded-xl items-center border border-slate-900 bg-[var(--blur-color)]
+        rtl:flex-row-reverse">
 
-        <FlexRow className="gap-6 ">
+        <FlexRow className="gap-6 
+          rtl:flex-row-reverse">
           <div 
             onClick={()=>changeLanguage("en")}
             className={`px-[1%] relative flex justify-center w-fit cursor-pointer `}>

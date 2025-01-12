@@ -8,6 +8,7 @@ import Docker from "@/components/customIcons/Docker";
 import Github from "@/components/customIcons/Github";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import FlexRow from "@/components/styled/FlexRow";
 function TechStack() {
   const [t] = useTranslation()
   const bigWrapperRef = useRef<HTMLDivElement>(null)
@@ -42,9 +43,10 @@ function TechStack() {
         </div>
       </div>
 
-      <div className=" mx-[10%] relative wrapper  flex overflow-x-auto pointer-events-none ">
+      <FlexRow className=" mx-12 | relative wrapper overflow-x-auto pointer-events-none ">
         <div  ref={bigWrapperRef}  className='topPartnerWrapper flex w-full h-full'>
-          <div className=" p-6 basis-2/12  md:basis-1/4  shrink-0  flex justify-center items-center">
+          <div className=" p-6 basis-1/12   shrink-0  flex justify-center items-center
+            md:basis-1/4">
             <React/>
           </div> 
           <div className=" p-6 | basis-2/12  md:basis-1/4  shrink-0 flex justify-center items-center">
@@ -74,9 +76,9 @@ function TechStack() {
             </div>
           </div>
         </div>
-      </div>
+      </FlexRow>
       
-      <div className="mx-[20%] relative  flex wrapper  overflow-x-auto   pointer-events-none">
+      <FlexRow className="mx-16 relative  flex wrapper  overflow-x-auto   pointer-events-none">
         <div ref={smallWrapperRef} className='downPartnerWrapper flex w-full h-full'>
           <div className=" p-6 | basis-1/4   shrink-0  flex justify-center items-center">
             <Aws/>
@@ -108,7 +110,7 @@ function TechStack() {
             </div>
           </div>
         </div>
-      </div>
+      </FlexRow>
     </div>
   )
 }

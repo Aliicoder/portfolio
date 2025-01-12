@@ -44,7 +44,7 @@ function MyServices() {
                   <div className="md:p-6">
                    <Lottie className="p-[12%]" animationData={uxui} />
                   </div>            
-                  <h1 className=" c7 md:c3 font-bold ">{t("services.uxUiDesign.title")}</h1>
+                  <h1 className=" c7 md:c3 font-bold line-clamp-1 ">{t("services.uxUiDesign.title")}</h1>
                   <h2 className=" c5 md:c3 line-clamp-4 text balance">
                   {t("services.uxUiDesign.description")}
                   </h2>
@@ -61,7 +61,7 @@ function MyServices() {
                   <div className="">
                    <Lottie className="p-[12%]" animationData={web} />
                   </div>            
-                  <h1 className="c7 md:c3 font-bold ">{t("services.webDevelopment.title")}</h1>
+                  <h1 className="c7 md:c3 font-bold line-clamp-1">{t("services.webDevelopment.title")}</h1>
                   <h2 className="c5 md:c3 line-clamp-4 text-balance">
                   {t("services.uxUiDesign.description")}
                   </h2>
@@ -78,7 +78,7 @@ function MyServices() {
                   <div className="">
                    <Lottie className="p-[12%]" animationData={mob} />
                   </div>            
-                  <h1 className="c7 md:c3 font-bold ">{t("services.mobileDevelopment.title")}</h1>
+                  <h1 className="c7 md:c3 font-bold line-clamp-1">{t("services.mobileDevelopment.title")}</h1>
                   <h2 className="c5 md:c3 line-clamp-4 text-balance">
                     {t("services.mobileDevelopment.description")}
                   </h2>
