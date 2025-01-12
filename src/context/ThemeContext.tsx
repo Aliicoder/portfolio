@@ -22,7 +22,7 @@ function ThemeProvider({children}:ThemeProvider) {
       root.setProperty('--primary-color', '#bb86fc'); 
       root.setProperty('--blur-color', '#f1f1f110'); 
     } else {
-      root.setProperty('--primary-background-color', '#ffffff'); 
+      root.setProperty('--primary-background-color', '#f8fafc'); 
       root.setProperty('--secondary-background-color', '#000000'); 
       root.setProperty('--primary-text-color', '#000000');
       root.setProperty('--secondary-text-color', '#ffffff');  

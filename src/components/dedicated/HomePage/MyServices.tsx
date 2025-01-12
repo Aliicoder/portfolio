@@ -44,12 +44,9 @@ function MyServices() {
                   <div className="md:p-6">
                    <Lottie className="p-[12%]" animationData={uxui} />
                   </div>            
-                  <h1 className=" c7 md:c3 font-bold ">UX & UI design</h1>
+                  <h1 className=" c7 md:c3 font-bold ">{t("services.uxUiDesign.title")}</h1>
                   <h2 className=" c5 md:c3 line-clamp-4 text balance">
-                  I focus on creating intuitive and visually appealing designs that enhance the user experience. 
-                  I am passionate about understanding the needs and behaviors of users to create seamless, user-centric interfaces. 
-                  My skills encompass wireframing, prototyping, and conducting user research to ensure that the final product not
-                   only looks great but also serves its purpose effectively.
+                  {t("services.uxUiDesign.description")}
                   </h2>
                 </Squircle>
                 </Squircle>
@@ -64,12 +61,9 @@ function MyServices() {
                   <div className="">
                    <Lottie className="p-[12%]" animationData={web} />
                   </div>            
-                  <h1 className="c7 md:c3 font-bold ">Web development</h1>
+                  <h1 className="c7 md:c3 font-bold ">{t("services.webDevelopment.title")}</h1>
                   <h2 className="c5 md:c3 line-clamp-4 text-balance">
-                  I specialize in building dynamic and responsive websites that deliver seamless user experiences across different 
-                  devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, 
-                  I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back-end, 
-                  I work with Node.js, Express, and MongoDB to build scalable, efficient applications.
+                  {t("services.uxUiDesign.description")}
                   </h2>
                 </Squircle>
                 </Squircle>
@@ -84,12 +78,9 @@ function MyServices() {
                   <div className="">
                    <Lottie className="p-[12%]" animationData={mob} />
                   </div>            
-                  <h1 className="c7 md:c3 font-bold ">Mobile development</h1>
+                  <h1 className="c7 md:c3 font-bold ">{t("services.mobileDevelopment.title")}</h1>
                   <h2 className="c5 md:c3 line-clamp-4 text-balance">
-                  I create cross-platform mobile applications using React Native. With a strong understanding of 
-                  mobile development principles, I build responsive, intuitive, and high-performance apps that work seamlessly 
-                  across both iOS and Android platforms. My skills include integrating native modules, optimizing app performance, 
-                  and ensuring smooth navigation and UI components that provide a native-like experience
+                    {t("services.mobileDevelopment.description")}
                   </h2>
                 </Squircle>
                 </Squircle>

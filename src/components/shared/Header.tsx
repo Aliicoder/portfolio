@@ -19,7 +19,6 @@ function Header() {
   },[])
   return (
   <div ref={headerRef} className="p-[3%] montserrat container mx-auto flex justify-center  ">
-    <h1 className="font-semibold">alicoder.</h1>
   </div>
   )
 }

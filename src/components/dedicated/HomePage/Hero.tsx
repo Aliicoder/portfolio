@@ -9,7 +9,7 @@ interface IHero {
 function Hero({className}:IHero) {
   const [t] = useTranslation() 
   return (
-    <FlexRow className={`${className} `}>
+    <FlexRow className={`${className}  `}>
 
       <FlexCol className=" relative  basis-full  | justify-center items-center
         md:basis-1/2">
@@ -38,11 +38,11 @@ function Hero({className}:IHero) {
 
           <CustomButton text={t("buttons.downloadCV")} 
             className=" c6 p-3 gap-3 flex items-center  shadow-none rounded-lg border
-              md:c3 md:p-2 md:top-6 md:right-6  ">
+              md:c3 md:p-2   ">
           </CustomButton>
           <CustomButton text={t("buttons.contact")} 
             className=" c6 p-3 gap-3 flex items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border
-              md:c3 md:p-2 md:top-6 md:right-6 ">
+              md:c3 md:p-2  ">
             <FaArrowRight />
           </CustomButton>
         </div>

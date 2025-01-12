@@ -17,9 +17,16 @@ function Menu({className}:IMenu) {
     console.log(darkTheme)
   },[darkTheme])
   return (
-    <FlexRow  className={`${className}  justify-end`}>
-      <FlexRow className=" gap-6 px-3 py-2 | rounded-xl items-center border border-slate-900 bg-[var(--blur-color)]">
-        <FlexRow className="gap-6">
+    <FlexRow  className={`${className} items-center justify-end`}>
+
+      <h1 className=" mr-auto ml-10 c5 font-semibold">
+        alicoder
+        <span className="text-[--tertiary-background-color]">.</span>
+      </h1>
+
+      <FlexRow className=" gap-6 px-3 py-2 sticky top-6  | rounded-xl items-center border border-slate-900 bg-[var(--blur-color)]">
+
+        <FlexRow className="gap-6 ">
           <div 
             onClick={()=>changeLanguage("en")}
             className={`${language == "en" ? "font-bold":""} px-[1%] relative flex justify-center w-fit cursor-pointer `}>

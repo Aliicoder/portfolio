@@ -7,7 +7,9 @@ import Git from "@/components/customIcons/Git";
 import Docker from "@/components/customIcons/Docker";
 import Github from "@/components/customIcons/Github";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 function TechStack() {
+  const [t] = useTranslation()
   const bigWrapperRef = useRef<HTMLDivElement>(null)
   const smallWrapperRef = useRef<HTMLDivElement>(null)
   useEffect(()=>{
@@ -29,10 +31,13 @@ function TechStack() {
     }
   },[])
   return (
-    <div className="container mx-auto bg-[var(--main-color)]">
-      <div className="p-[6%]">
-        <div className="px-[1%]  relative flex justify-center w-fit ">
-          <h1 className="relative c8 md:c4 font-semibold z-20 ">My tech stack and technologies </h1>
+    <div>
+      <div className="p-12">
+        <div className="px-2  relative flex justify-center w-fit ">
+          <h1 className="relative c8  font-semibold z-20 
+            md:c4">
+            {t("headers.myTech")} 
+          </h1>
           <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
         </div>
       </div>
