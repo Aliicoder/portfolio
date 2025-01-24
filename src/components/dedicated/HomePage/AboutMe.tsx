@@ -1,6 +1,8 @@
 import Lottie from "lottie-react"
 import study from "@/lottie/STUDY.json"
 import { useTranslation } from "react-i18next"
+import { motion } from "framer-motion";
+
 function AboutMe() {
   const [t,{}] = useTranslation()
   return (
@@ -8,7 +10,13 @@ function AboutMe() {
     <div className="p-[6%]">
       <div className="px-[1%]  relative flex justify-center w-fit ">
         <h1 className="relative c8 md:c4 font-semibold z-20 ">{t("headers.aboutMe")}</h1>
-        <div className="absolute bottom-0 h-2 w-full z-10 bg-[var(--tertiary-background-color)] " />
+        <motion.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{duration:2}}
+          viewport={{ once: true, amount: 0.5 }}
+          className="absolute origin-left w-full bottom-0 h-2 z-10 bg-[var(--tertiary-background-color)] 
+          rtl:ori" />
       </div>
     </div>
       <div className="flex flex-col-reverse md:flex-row flex-wrap">

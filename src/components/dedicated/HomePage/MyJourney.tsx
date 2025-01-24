@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import { motion } from "framer-motion";
 
 function MyJourney() {
   const [t] = useTranslation()
@@ -7,7 +8,13 @@ function MyJourney() {
       <div className="p-6">
         <div className="relative flex justify-center w-fit ">
           <h1 className="relative c8 md:c4 font-semibold z-20 ">{t("headers.myJourney")}</h1>
-          <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
+          <motion.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{duration:2}}
+          viewport={{ once: true, amount: 0.5 }}
+          className="absolute origin-left w-full bottom-0 h-2 z-10 bg-[var(--tertiary-background-color)] 
+          rtl:origin-right" />
         </div>
       </div>
       <div className="p-[6%] px-[12%] flex ">

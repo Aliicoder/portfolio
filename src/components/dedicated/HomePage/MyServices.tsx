@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Lottie from "lottie-react";
 import uxui from "@/lottie/UXUI.json"
 import web from "@/lottie/WEB.json"
+import { motion } from "framer-motion";
 import mob from "@/lottie/MOB.json"
 import { Squircle } from "corner-smoothing";
 import { useTranslation } from "react-i18next";
@@ -13,7 +14,13 @@ function MyServices() {
     <div className="p-6 py-12">
       <div className="px-[1%]  relative flex justify-center w-fit ">
         <h1 className="relative c8 md:c4 font-semibold z-20 ">{t("headers.myServices")}</h1>
-        <div className="absolute bottom-0 h-2 w-full z-10 bg-[var(--tertiary-background-color)]" />
+        <motion.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{duration:2}}
+          viewport={{ once: true, amount: 0.5 }}
+          className="absolute origin-left w-full bottom-0 h-2 z-10 bg-[var(--tertiary-background-color)] 
+          rtl:origin-right" />
       </div>
     </div>
     <div className="">

@@ -5,6 +5,7 @@ import Node from "@/components/customIcons/Node";
 import Aws from "@/components/customIcons/Aws";
 import Git from "@/components/customIcons/Git";
 import Docker from "@/components/customIcons/Docker";
+import { motion } from "framer-motion";
 import Github from "@/components/customIcons/Github";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
@@ -39,7 +40,13 @@ function TechStack() {
             md:c4">
             {t("headers.myTech")} 
           </h1>
-          <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
+          <motion.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{duration:2}}
+          viewport={{ once: true, amount: 0.5 }}
+          className="absolute origin-left w-full bottom-0 h-2 z-10 bg-[var(--tertiary-background-color)] 
+          rtl:origin-right" />
         </div>
       </div>
 

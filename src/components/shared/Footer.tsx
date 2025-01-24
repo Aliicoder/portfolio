@@ -3,6 +3,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import Grid from "../styled/Grid";
 import CustomButton from "../buttons/CustomButton";
 import FlexCol from "../styled/FlexCol";
+import { motion } from "framer-motion";
 function Footer() {
   const [t] = useTranslation()
   const sendEmail = () => {
@@ -18,7 +19,13 @@ function Footer() {
       <div className="p-12">
         <div className="px-[1%]   relative flex justify-center w-fit ">
           <h1 className="relative c8 md:c4 font-semibold z-20 ">{t("contact.title")}</h1>
-          <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
+          <motion.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{duration:2}}
+          viewport={{ once: true, amount: 0.5 }}
+          className="absolute origin-left w-full bottom-0 h-2 z-10 bg-[var(--tertiary-background-color)] 
+          rtl:origin-right" />
         </div>
       </div>
       <FlexCol className={"bg-[var(--blur-color)] rounded-t-xl"}>
