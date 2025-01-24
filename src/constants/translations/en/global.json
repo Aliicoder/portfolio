@@ -6,8 +6,8 @@
     "summary": "I specialize in creating dynamic, user-focused applications using the MERN stack, TypeScript, and Tailwind CSS. My expertise extends to handling advanced features like authentication, real-time communication with Socket.io, and seamless animations using Framer Motion. With a strong foundation in backend development, including MongoDB and Node.js, I take pride in building efficient, scalable solutions. My passion for learning and problem-solving drives me to deliver high-quality code and innovative projects."
   },
   "buttons": {
-    "downloadCV": "Download CV",
-    "contact": "Contact",
+    "downloadCV": "Download cv",
+    "contact": "Contact me",
     "mailMe": "Email me"
   },
   "headers":{
