@@ -16,7 +16,7 @@ function MyServices() {
         <div className="absolute bottom-0 h-2 w-full z-10 bg-[var(--tertiary-background-color)]" />
       </div>
     </div>
-    <div className=" p-[6px] ">
+    <div className="">
       <Carousel className="">    
         <CarouselContent className="-ml-1">
           <CarouselItem  className=" hidden md:block opacity-0 basis-2/12  md:basis-1/2 lg:basis-2/12">

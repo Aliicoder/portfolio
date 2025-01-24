@@ -5,6 +5,13 @@ import CustomButton from "../buttons/CustomButton";
 import FlexCol from "../styled/FlexCol";
 function Footer() {
   const [t] = useTranslation()
+  const sendEmail = () => {
+    const email = "alifahmiofficialacc@gmail.com"
+    const subject = encodeURIComponent(t("contact.emailSubject"))
+    const body = encodeURIComponent(t("contact.emailBody"))
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`
+    window.open(mailtoLink, "_self")
+  };
   return (
     <div>
 
@@ -39,7 +46,9 @@ function Footer() {
             <h1 className="c9">{t("contact.title")}</h1>
             <h1 className=" c5 md:c3 font-light">{t("contact.cta")}</h1>
             <div className="mt-3">
-              <CustomButton className="c6 p-3 gap-3 flex items-center bg-[--tertiary-background-color] text-white shadow-none rounded-lg border
+              <CustomButton 
+                onClick={sendEmail}
+                className="c6 p-3 gap-3 flex items-center bg-[--tertiary-background-color] text-white shadow-none rounded-lg border
                 md:c3 md:p-2 md:top-6 md:right-6" 
                 text={t("contact.email")} direction={"left"}>
                 <RiSendPlaneFill />

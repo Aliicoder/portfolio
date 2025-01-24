@@ -8,6 +8,18 @@ interface IHero {
 }
 function Hero({className}:IHero) {
   const [t] = useTranslation() 
+  const downloadCV = () => {
+    const link = document.createElement("a")
+    link.href = "/path-to-your-cv.pdf";
+    link.download = "Ali_Fahmi_CV.pdf"
+    link.click();
+  }
+  const contactOnWhatsApp = () => {
+    const phoneNumber = "+916366313572"
+    const message = encodeURIComponent("Hello, I’d like to get in touch!")
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`
+    window.open(whatsappURL, "_blank");
+  };
   return (
     <FlexRow className={`${className}  `}>
 
@@ -37,10 +49,12 @@ function Hero({className}:IHero) {
         <FlexCol className="py-12 gap-6 mx-auto | w-fit  flex-col-reverse 
           md:flex-row md:m-0">
           <CustomButton text={t("buttons.downloadCV")} 
+            onClick={downloadCV}
             className=" c6 p-3 gap-3 flex items-center  shadow-none rounded-lg border
               md:c3 md:p-2   ">
           </CustomButton>
           <CustomButton text={t("buttons.contact")} 
+            onClick={contactOnWhatsApp}
             className=" c6 p-3 gap-3 flex items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border
               md:c3 md:p-2  ">
             <FaArrowRight className="rtl:-scale-x-100" />

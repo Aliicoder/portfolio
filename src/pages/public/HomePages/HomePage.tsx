@@ -8,6 +8,7 @@ import Footer from "@/components/shared/Footer";
 import MyJourney from "@/components/dedicated/HomePage/MyJourney";
 import Menu from "@/components/shared/Menu";
 import FlexColContainer from "@/components/styled/FlexColContainer";
+import MySkills from "@/components/dedicated/HomePage/MySkills";
 
 const HomePage = memo( function HomePage() { useInitialRendersCounter("HomePage")
   return (
