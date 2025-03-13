@@ -17,7 +17,7 @@ function MyJourney() {
       <div className="p-[6%] px-[12%] flex ">
         <div
           className={` w-[0.12rem] shrink-0 bg-[--gray-color] radial-gray 
-          ${darkTheme ? "black-radial" : "gray-radial"}`}
+          ${darkTheme ? "black-gradient" : "gray-gradient"}`}
         />
         <div className="flex flex-col gap-6 ">
           <div>

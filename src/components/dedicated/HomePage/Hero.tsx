@@ -1,7 +1,8 @@
 import CustomButton from "@/components/buttons/CustomButton"
 import { useTranslation } from "react-i18next"
-import { FaArrowRight } from "react-icons/fa6"
 import { MdOutlineFileDownload } from "react-icons/md"
+import { LuArrowUpRight } from "react-icons/lu"
+;<LuArrowUpRight />
 function Hero() {
   const [t, { language }] = useTranslation()
   const downloadCV = () => {
@@ -69,7 +70,7 @@ function Hero() {
             className=" c6 p-3 gap-3 flex items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border
               md:c3 md:p-2  "
           >
-            <FaArrowRight className="rtl:-scale-x-100" />
+            <LuArrowUpRight className="rtl:-scale-x-100" />
           </CustomButton>
         </div>
       </div>
