@@ -13,6 +13,40 @@
   * {
     outline: ato;
   }
+  .black-gradient {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      108deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  .gray-gradient {
+    background: rgb(248, 250, 252);
+    background: linear-gradient(
+      108deg,
+      rgba(248, 250, 252, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(248, 250, 252, 1) 100%
+    );
+  }
+  .gray-radial {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(248, 250, 252, 1) 100%
+    );
+  }
+  .black-radial {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.7987570028011204) 100%
+    );
+  }
   .aref-ruqaa {
     font-family: "Aref Ruqaa", serif;
     font-style: normal;

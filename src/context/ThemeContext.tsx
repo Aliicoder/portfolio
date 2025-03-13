@@ -1,37 +1,44 @@
-import { PropsWithChildren, useState , createContext, SetStateAction, Dispatch, useEffect} from 'react'
+import {
+  PropsWithChildren,
+  useState,
+  createContext,
+  SetStateAction,
+  Dispatch,
+  useEffect,
+} from "react"
 interface ThemeContextType {
-  darkTheme: boolean;
-  setDarkTheme: Dispatch<SetStateAction<boolean>>;
+  darkTheme: boolean
+  setDarkTheme: Dispatch<SetStateAction<boolean>>
 }
 
 export const ThemeContext = createContext<ThemeContextType>({
   darkTheme: false,
-  setDarkTheme: () => {}, 
-});
+  setDarkTheme: () => {},
+})
 interface ThemeProvider extends PropsWithChildren {}
-function ThemeProvider({children}:ThemeProvider) {
-  const [darkTheme,setDarkTheme] = useState(true)
-  useEffect(()=>{
+function ThemeProvider({ children }: ThemeProvider) {
+  const [darkTheme, setDarkTheme] = useState(false)
+  useEffect(() => {
     let root = document.documentElement.style
-    if(darkTheme){
-      root.setProperty('--primary-background-color', '#000000'); 
-      root.setProperty('--secondary-background-color', '#ffffff'); 
-      root.setProperty('--tertiary-background-color', '#1673ff');
-      root.setProperty('--primary-text-color', '#ffffff'); 
-      root.setProperty('--secondary-text-color', '#000000'); 
-      root.setProperty('--primary-color', '#bb86fc'); 
-      root.setProperty('--blur-color', '#f1f1f110'); 
+    if (darkTheme) {
+      root.setProperty("--primary-background-color", "#000000")
+      root.setProperty("--secondary-background-color", "#ffffff")
+      root.setProperty("--tertiary-background-color", "#1673ff")
+      root.setProperty("--primary-text-color", "#ffffff")
+      root.setProperty("--secondary-text-color", "#000000")
+      root.setProperty("--primary-color", "#bb86fc")
+      root.setProperty("--blur-color", "#f1f1f110")
     } else {
-      root.setProperty('--primary-background-color', '#f8fafc'); 
-      root.setProperty('--secondary-background-color', '#000000'); 
-      root.setProperty('--primary-text-color', '#000000');
-      root.setProperty('--secondary-text-color', '#ffffff');  
-      root.setProperty('--primary-color', '#6200ee'); 
-      root.setProperty('--blur-color', '#ffffff'); 
+      root.setProperty("--primary-background-color", "#f8fafc")
+      root.setProperty("--secondary-background-color", "#000000")
+      root.setProperty("--primary-text-color", "#000000")
+      root.setProperty("--secondary-text-color", "#ffffff")
+      root.setProperty("--primary-color", "#6200ee")
+      root.setProperty("--blur-color", "#ffffff")
     }
-  },[darkTheme])
+  }, [darkTheme])
   return (
-    <ThemeContext.Provider value={{darkTheme,setDarkTheme}}>
+    <ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
       {children}
     </ThemeContext.Provider>
   )
