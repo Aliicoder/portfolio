@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react"
-import FlexRow from "../styled/FlexRow"
 import { useTranslation } from "react-i18next"
 import { CiDark } from "react-icons/ci"
 import { CiLight } from "react-icons/ci"

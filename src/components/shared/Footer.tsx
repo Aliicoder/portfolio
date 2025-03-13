@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { RiSendPlaneFill } from "react-icons/ri"
-import Grid from "../styled/Grid"
 import CustomButton from "../buttons/CustomButton"
-import FlexCol from "../styled/FlexCol"
-import { motion } from "framer-motion"
+
 function Footer() {
   const [t] = useTranslation()
   const sendEmail = () => {
