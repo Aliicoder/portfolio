@@ -1,9 +1,9 @@
 import CustomButton from "@/components/buttons/CustomButton"
 import { useTranslation } from "react-i18next"
 import { FaArrowRight } from "react-icons/fa6"
-
+import { MdOutlineFileDownload } from "react-icons/md"
 function Hero() {
-  const [t] = useTranslation()
+  const [t, { language }] = useTranslation()
   const downloadCV = () => {
     const link = document.createElement("a")
     link.href = "/path-to-your-cv.pdf"
@@ -58,7 +58,11 @@ function Hero() {
             onClick={downloadCV}
             className=" c6 p-3 gap-3 flex items-center  shadow-none rounded-lg border
               md:c3 md:p-2   "
-          ></CustomButton>
+          >
+            {language == "en" && (
+              <MdOutlineFileDownload className="rtl:-scale-x-100" />
+            )}
+          </CustomButton>
           <CustomButton
             text={t("buttons.contact")}
             onClick={contactOnWhatsApp}
