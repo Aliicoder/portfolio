@@ -17,7 +17,7 @@ export const ThemeContext = createContext<ThemeContextType>({
 })
 interface ThemeProvider extends PropsWithChildren {}
 function ThemeProvider({ children }: ThemeProvider) {
-  const [darkTheme, setDarkTheme] = useState(false)
+  const [darkTheme, setDarkTheme] = useState(true)
   useEffect(() => {
     let root = document.documentElement.style
     if (darkTheme) {

@@ -29,9 +29,10 @@ function MyJourney() {
               <h1 className="c6 md:c3 text-nowrap">
                 {t("journey.graphicDesign.years")}
               </h1>
-              <div className="absolute w-1 scale-110 origin-center h-1/2 -translate-x-full  left-0 top-0 " />
+              <div className="absolute w-1 scale-110 origin-center h-1/2 -translate-x-full  left-0 top-0  " />
               <div
-                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6  rounded-full bg-[--fill-color] border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2
+                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6  rounded-full bg-[--fill-color] opacity-50
+                border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2
                 rtl:right-0 rtl:translate-x-[calc(50%+0.07rem)] "
               />
             </h1>
@@ -49,7 +50,8 @@ function MyJourney() {
               </h1>
               <h1 className="c6 md:c3 text-nowrap">2021 - 2022</h1>
               <div
-                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2
+                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] 
+                border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2 opacity-80
                 rtl:right-0 rtl:translate-x-[calc(50%+0.07rem)]"
               />
             </h1>
@@ -67,7 +69,8 @@ function MyJourney() {
               </h1>
               <h1 className="c6 md:c3 text-nowrap">2021 - 2022</h1>
               <div
-                className="absolute z-10 left-0 top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2
+                className="absolute z-10 left-0 top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] 
+                border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2 
               rtl:right-0 rtl:translate-x-[calc(50%+0.07rem)]"
               />
             </h1>
@@ -85,7 +88,8 @@ function MyJourney() {
               </h1>
               <h1 className="c6 md:c3 text-nowrap">2022 - 2023</h1>
               <div
-                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2
+                className="absolute z-10 left-0  top-1/2 w-2 aspect-square md:w-6 rounded-full bg-[--fill-color] 
+                border border-[--gray-color]  -translate-x-[calc(50%+0.07rem)] -translate-y-1/2 opacity-80
               rtl:right-0 rtl:translate-x-[calc(50%+0.07rem)]"
               />
             </h1>

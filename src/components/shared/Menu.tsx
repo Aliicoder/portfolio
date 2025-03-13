@@ -65,7 +65,7 @@ function Menu({ className }: IMenu) {
             onClick={() => changeLanguage("en")}
             className={`px-[1%] relative flex justify-center w-fit cursor-pointer `}
           >
-            <h1 className="relative c8 md:c4 z-20 text-whit">English</h1>
+            <h1 className="relative c8 md:c4 z-20 text-whit">english</h1>
             {language == "en" && (
               <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
             )}
