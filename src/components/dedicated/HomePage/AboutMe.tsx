@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <div className="mt-8 container mx-auto bg-[var(--main-color)] overflow-hidden">
       <div className="p-8">
-        <div className="  relative flex justify-center w-fit ">
+        <div className="relative flex justify-center w-fit ">
           <h1 className="relative text-lg md:text-xl font-semibold z-20 ">
             {t("headers.aboutMe")}
           </h1>

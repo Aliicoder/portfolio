@@ -25,13 +25,13 @@ function MyServices() {
       <Carousel style={{ direction: "ltr" }}>
         <CarouselContent className="-ml-1">
           <CarouselItem className=" hidden md:block opacity-0 basis-2/12  md:basis-1/2 lg:basis-2/12">
-            <Card className=" border-0 shadow-none bg-white">
+            <Card  className=" border-0 shadow-none bg-white">
               <CardContent className=" p-4">
-                <div className="p-4 flex flex-col gap-4 rounded-md  ">
+                <div  className="p-4 flex flex-col gap-4 rounded-md  ">
                   <div className="">
                     <Lottie className="p-12 md:p-16" animationData={uxui} />
                   </div>
-                  <h1 className="md:text-lg font-bold ">UX & UI design</h1>
+                  <h1 className="md:text-lg font-bold  ">UX & UI design</h1>
                   <h2 className="line-clamp-4">
                     the focus lies in crafting seamless, intuitive, and visually
                     engaging experiences that resonate with users. ensures that
@@ -78,7 +78,7 @@ function MyServices() {
           <CarouselItem className=" shrink-0 basis-8/12  md:basis-1/2 lg:basis-4/12">
             <Card className=" border-0 shadow-none bg-transparent">
               <CardContent className="p-4 text-[--primary-text-color] border rounded-xl">
-                <div className="p-4 md:p-8">
+                <div className="p-12 md:p-16">
                   <Lottie animationData={mob} />
                 </div>
                 <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
