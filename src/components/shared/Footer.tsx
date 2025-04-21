@@ -43,7 +43,7 @@ function Footer() {
               <CustomButton
                 onClick={sendEmail}
                 className="text-sm md:text-base mt-4 p-4 gap-3 flex items-center bg-[--tertiary-background-color] text-white shadow-none rounded-lg 
-               md:top-6 md:right-6"
+                md:p-2 md:top-6 md:right-6"
                 text={t("contact.email")}
                 direction={"left"}
               >

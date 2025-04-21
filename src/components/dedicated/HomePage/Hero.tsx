@@ -26,10 +26,10 @@ function Hero() {
         <img className="z-10" src="/index/main.png" alt="" />
       </div>
 
-      <div className="mt-8 p-4 flex flex-col basis-full md:basis-1/2 justify-center">
+      <div className="mt-8 p-4 flex flex-col basis-full  md:basis-1/2 justify-center">
         <div className="py-4 gap-4 flex flex-col">
           <h1
-            className="text-xl font-semibold md:text-2xl"
+            className="text-xl font-semibold md:text-2xl "
           >
             {t("intro.name")}
           </h1>

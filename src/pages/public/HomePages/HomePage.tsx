@@ -6,12 +6,14 @@ import TechStack from "@/components/dedicated/HomePage/TechStack"
 import Footer from "@/components/shared/Footer"
 import MyJourney from "@/components/dedicated/HomePage/MyJourney"
 import Menu from "@/components/shared/Menu"
+import ScrollUp from "@/components/shared/ScrollUp"
 
 const HomePage = memo(function HomePage() {
   return (
     <div className="w-full h-full bg-[var(--primary-background-color)]">
       <div className=" relative mx-auto container flex flex-col rubik scroll-smooth text-[var(--primary-text-color)]">
-        <Menu className="m-8 z-50 sticky top-8 " />
+        <Menu className="m-8 z-50 sticky top-8  " />
+        <ScrollUp />
         <div className="mx-auto container flex flex-col overflow-hidden">
           <Hero />
           <AboutMe />

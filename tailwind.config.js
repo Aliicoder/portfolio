@@ -7,6 +7,11 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            rubik: ['Rubik', 'sans-serif'],
+            bebas: ['Bebas Neue', 'cursive'],
+        },
         extend: {
             borderRadius: {
                 lg: 'var(--radius)',

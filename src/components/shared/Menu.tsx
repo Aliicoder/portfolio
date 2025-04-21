@@ -31,14 +31,14 @@ function Menu({ className }: IMenu) {
     } else if (currentYScroll > lastScrollPosition) {
       setIsShowHeader(false)
     } else if (currentYScroll < lastScrollPosition) {
-      setIsShowHeader(true)
+      setIsShowHeader(false)
     }
     setLastScrollPosition(currentYScroll)
   }, [currentYScroll, lastScrollPosition])
   useGSAP(() => {
     if (isShowHeader === false) {
       gsap.to("#header-frame", {
-        y: "-150%",
+        y: "-350%",
       })
     } else {
       gsap.to("#header-frame", {
@@ -49,23 +49,22 @@ function Menu({ className }: IMenu) {
   return (
     <div
       id="header-frame"
-      className={`${className} flex flex-row items-center justify-end
+      className={`${className}  flex flex-row items-center justify-center
       rtl:flex-row-reverse`}
     >
       <div
-        className={`sticky gap-6 px-3 py-2 top-6 flex  rounded-xl items-center border  bg-[var(--blur-color)]
-          ${darkTheme && "border-black"}
+        className={`sticky px-4 py-2 top-6 flex  rounded-xl items-center  text-[--secondary-text-color] bg-[var(--secondary-background-color)]
         rtl:flex-row-reverse`}
       >
         <div
-          className="gap-6 flex
+          className="gap-4 flex
           rtl:flex-row-reverse"
         >
           <div
             onClick={() => changeLanguage("en")}
-            className={`px-[1%] relative flex justify-center w-fit cursor-pointer `}
+            className={`relative flex justify-center w-fit cursor-pointer `}
           >
-            <h1 className="relative c8 md:c4 z-20 text-whit">english</h1>
+            <h1 className="relative c8 md:c4 z-20 text-whit">En</h1>
             {language == "en" && (
               <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
             )}
@@ -80,12 +79,15 @@ function Menu({ className }: IMenu) {
             )}
           </div>
         </div>
+        <div className="mx-4 h-[15px] w-[0.5px] bg-gray-100">
+          
+        </div>
         <div
           onClick={() => setDarkTheme((prev) => !prev)}
-          className={` ${darkTheme ? "bg-[#ffffff05]" : "bg-slate-50"}
-            p-3 | flex justify-center items-center cursor-pointer  rounded-full `}
+          className="flex gap-3"
         >
           {darkTheme ? <CiLight /> : <CiDark />}
+
         </div>
       </div>
     </div>
