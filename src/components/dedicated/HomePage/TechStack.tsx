@@ -106,16 +106,16 @@ function TechStack() {
           ref={smallWrapperRef}
           className="downPartnerWrapper flex w-full h-full"
         >
-          <div className=" p-6 | basis-1/4   shrink-0  flex justify-center items-center">
+          <div className=" p-6 basis-1/4   shrink-0  flex justify-center items-center">
             <Aws />
           </div>
-          <div className="p-6 | basis-1/4     shrink-0 flex justify-center items-center">
+          <div className="p-6 basis-1/4     shrink-0 flex justify-center items-center">
             <Git />
           </div>
-          <div className="p-6 | basis-1/4    shrink-0 flex justify-center items-center">
+          <div className="p-6 basis-1/4    shrink-0 flex justify-center items-center">
             <Docker />
           </div>
-          <div className="p-6 | basis-1/4     shrink-0 flex justify-center items-center">
+          <div className="p-6 basis-1/4     shrink-0 flex justify-center items-center">
             <Github />
           </div>
 
@@ -123,16 +123,16 @@ function TechStack() {
             style={{ right: "var(--small-wrapper-width)" }}
             className={`absolute flex w-full h-full pointer-events-none`}
           >
-            <div className="p-6 | basis-1/4 shrink-0  flex justify-center items-center">
+            <div className="p-6 basis-1/4 shrink-0  flex justify-center items-center">
               <Aws />
             </div>
-            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
+            <div className="p-6 basis-1/4  shrink-0 flex justify-center items-center">
               <Git />
             </div>
-            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
+            <div className="p-6 basis-1/4  shrink-0 flex justify-center items-center">
               <Docker />
             </div>
-            <div className="p-6 | basis-1/4  shrink-0 flex justify-center items-center">
+            <div className="p-6 basis-1/4  shrink-0 flex justify-center items-center">
               <Github />
             </div>
           </div>

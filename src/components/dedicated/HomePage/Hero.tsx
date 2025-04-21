@@ -29,21 +29,18 @@ function Hero() {
       <div className="mt-8 p-4 flex flex-col basis-full md:basis-1/2 justify-center">
         <div className="py-4 gap-4 flex flex-col">
           <h1
-            className="text-3xl font-semibold 
-            md:text-4xl"
+            className="text-xl font-semibold md:text-2xl"
           >
             {t("intro.name")}
           </h1>
           <div className="py-4 gap-4 flex flex-col h-fit">
             <h1
-              className="text-2xl font-semibold
-              md:text-3xl"
+              className="text-xl font-semibold md:text-2xl"
             >
               {t("intro.title")}
             </h1>
             <p
-              className="text-lg w-10/12 line-clamp-6 
-              md:text-xl"
+              className=" w-10/12 line-clamp-6 md:text-lg"
             >
               {t("intro.summary")}
             </p>
@@ -57,8 +54,7 @@ function Hero() {
           <CustomButton
             text={t("buttons.downloadCV")}
             onClick={downloadCV}
-            className=" text-lg  p-4 gap-3 flex justify-between items-center  shadow-none rounded-lg border
-              md:text-sm md:p-2 "
+            className="py-2 px-3 gap-2 flex justify-between items-center  shadow-none rounded-lg border md:p-2 "
           >
             {language == "en" && (
               <MdOutlineFileDownload className="rtl:-scale-x-100 " />
@@ -67,8 +63,7 @@ function Hero() {
           <CustomButton
             text={t("buttons.contact")}
             onClick={contactOnWhatsApp}
-            className=" text-lg p-4 gap-2 flex justify-between items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border
-              md:text-sm md:p-2  "
+            className="py-2 px-3 gap-2 flex justify-between items-center bg-[--secondary-background-color] text-[--secondary-text-color] shadow-none rounded-lg border"
           >
             <LuArrowUpRight className="rtl:-scale-x-100" />
           </CustomButton>

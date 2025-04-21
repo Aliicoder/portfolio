@@ -31,8 +31,8 @@ function MyServices() {
                   <div className="">
                     <Lottie className="p-12 md:p-16" animationData={uxui} />
                   </div>
-                  <h1 className="text-lg md:text-xl font-bold ">UX & UI design</h1>
-                  <h2 className=" line-clamp-4">
+                  <h1 className="md:text-lg font-bold ">UX & UI design</h1>
+                  <h2 className="line-clamp-4">
                     the focus lies in crafting seamless, intuitive, and visually
                     engaging experiences that resonate with users. ensures that
                     interactions with a product are effortless, enjoyable, and
@@ -49,7 +49,7 @@ function MyServices() {
                   <Lottie animationData={uxui} />
                 </div>
                 <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
-                  <h1 className="text-lg md:text-xl font-bold line-clamp-1 ">
+                  <h1 className="md:text-lg font-bold line-clamp-1 ">
                     {t("services.uxUiDesign.title")}
                   </h1>
                   <h2 className="text-sm md:text-normal line-clamp-4 text balance">
@@ -65,7 +65,7 @@ function MyServices() {
               <div className="p-12 md:p-16">              <Lottie animationData={web} />
                 </div>
                 <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
-                  <h1 className="text-lg md:text-xl font-bold line-clamp-1">
+                  <h1 className="md:text-lg font-bold line-clamp-1">
                     {t("services.webDevelopment.title")}
                   </h1>
                   <h2 className="text-sm md:text-normal line-clamp-4 text balance">
@@ -82,7 +82,7 @@ function MyServices() {
                   <Lottie animationData={mob} />
                 </div>
                 <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
-                  <h1 className="text-lg md:text-xl font-bold line-clamp-1">
+                  <h1 className="md:text-lg font-bold line-clamp-1">
                     {t("services.mobileDevelopment.title")}
                   </h1>
                   <h2 className="text-sm md:text-normal line-clamp-4 text balance">
