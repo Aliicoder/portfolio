@@ -11,8 +11,8 @@ const HomePage = memo(function HomePage() {
   return (
     <div className="w-full h-full bg-[var(--primary-background-color)]">
       <div className=" relative mx-auto container flex flex-col rubik scroll-smooth text-[var(--primary-text-color)]">
-        <Menu className="m-6 z-50 sticky top-6 " />
-        <div className="mx-auto container flex flex-col  overflow-hidden">
+        <Menu className="m-8 z-50 sticky top-8 " />
+        <div className="mx-auto container flex flex-col overflow-hidden">
           <Hero />
           <AboutMe />
           <MyServices />

@@ -39,12 +39,11 @@ function TechStack() {
     }
   }, [])
   return (
-    <section className="my-10">
-      <div className="p-6 py-12">
-        <div className="relative flex justify-center w-fit ">
+    <section className="mt-10">
+      <div className="p-8">
+        <div className="flex justify-center w-fit ">
           <h1
-            className="relative c8  font-semibold z-20 
-            md:c4"
+            className="text-lg md:text-xl font-semibold z-10"
           >
             {t("headers.myTech")}
           </h1>
