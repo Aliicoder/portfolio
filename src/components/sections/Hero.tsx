@@ -74,7 +74,7 @@ function Hero() {
     <section className={cn("pt-16 bg-blur-color")}>
       <div
         className={cn(
-          "h-svh  container  mx-auto flex flex-wrap ",
+          "container  mx-auto flex flex-wrap ",
           "md:h-[calc(100svh-150px)]"
         )}
       >

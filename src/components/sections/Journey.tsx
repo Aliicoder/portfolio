@@ -35,7 +35,7 @@ const Milestone = ({
   return (
     <div
       className={cn(
-        "relative pb-12 flex justify-center border-b border-t-1 border-blur-color overflow-hidden",
+        "relative pb-12 flex justify-center border-b border-t-1 border-secondary-bg-color ",
         index % 2 === 0
           ? "-mr-2 -ml-2 border-l rtl:border-r rtl:border-l-0 rounded-r-lg rounded-l-lg"
           : "-ml-2 -mr-2 border-r rtl:border-l rtl:border-r-0 rounded-l-lg rounded-r-lg",
@@ -44,12 +44,20 @@ const Milestone = ({
         index == 0 && "pt-12"
       )}
     >
+      <div
+        className={cn(
+          "absolute bg-primary-bg-color w-[5px] h-full",
+          index % 2 === 0
+            ? "right-0 rtl:left-0 rtl:right-auto"
+            : "left-0 rtl:right-0 rtl:left-auto"
+        )}
+      ></div>
       {index == 0 && (
         <div className="absolute px-8 top-4 left-0 w-full h-full">
           <Section string={t("headers.journey")} />
         </div>
       )}
-      <div className={cn("px-8 py-12 flex flex-col gap-4")}>
+      <div className={cn(" px-8 py-12 flex flex-col gap-4")}>
         <h1 className="p-4 md:text-lg font-bold">{title}</h1>
         <p className="max-w-[900px] text-sm line-clamp-5 text-balance">
           {description}
