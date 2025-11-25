@@ -1,97 +1,69 @@
-import { useContext, useEffect, useState } from "react"
-import { useTranslation } from "react-i18next"
-import { CiDark } from "react-icons/ci"
-import { CiLight } from "react-icons/ci"
-import { ThemeContext } from "@/context/ThemeContext"
-import { useWindowScroll } from "react-use"
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
-interface IMenu {
-  className: string
-}
-function Menu({ className }: IMenu) {
-  const [, { language, changeLanguage }] = useTranslation()
-  const { y: currentYScroll } = useWindowScroll()
-  const { darkTheme, setDarkTheme } = useContext(ThemeContext)
-  const [isShowHeader, setIsShowHeader] = useState(true)
-  const [lastScrollPosition, setLastScrollPosition] = useState(0)
-  useEffect(() => {
-    localStorage.setItem("language", language)
-  }, [language])
-  useEffect(() => {
-    localStorage.setItem("language", language)
-    document.documentElement.setAttribute(
-      "dir",
-      language === "ar" ? "rtl" : "ltr"
-    )
-  }, [language])
-  useEffect(() => {
-    if (currentYScroll == 0) {
-      setIsShowHeader(true)
-    } else if (currentYScroll > lastScrollPosition) {
-      setIsShowHeader(false)
-    } else if (currentYScroll < lastScrollPosition) {
-      setIsShowHeader(false)
-    }
-    setLastScrollPosition(currentYScroll)
-  }, [currentYScroll, lastScrollPosition])
-  useGSAP(() => {
-    if (isShowHeader === false) {
-      gsap.to("#header-frame", {
-        y: "-350%",
-      })
-    } else {
-      gsap.to("#header-frame", {
-        y: " 0%",
-      })
-    }
-  }, [isShowHeader])
+import { CiDark } from "react-icons/ci";
+import { CiLight } from "react-icons/ci";
+import { cn } from "@/lib/utils";
+import useLanguage from "@/hooks/useLanguage";
+import useMenu from "@/hooks/useMenu";
+import useTheme from "@/hooks/useTheme";
+
+const UnderLine = () => {
   return (
     <div
-      id="header-frame"
-      className={`${className}  flex flex-row items-center justify-center
-      rtl:flex-row-reverse`}
+      className={cn("w-full h-2 bg-tertiary-color", "absolute bottom-0 z-10")}
+    />
+  );
+};
+const Language = ({ lang }: { lang: string }) => {
+  const props: { [key: string]: string } = {
+    en: "English",
+    ar: "العربية",
+  };
+  const { language, changeLanguage } = useLanguage();
+  return (
+    <div
+      className={cn("w-fit flex justify-center", "relative cursor-pointer")}
+      onClick={() => changeLanguage(lang)}
+    >
+      <h1 className={cn("relative z-20")}>{props[lang]}</h1>
+      {language == lang && <UnderLine />}
+    </div>
+  );
+};
+const Separator = () => {
+  return <div className={cn("mx-4 h-[15px] w-[0.5px] bg-gray-100")} />;
+};
+function Menu() {
+  useMenu();
+  const { theme, handleChangeTheme } = useTheme();
+  return (
+    <div
+      id="menu"
+      className={cn(
+        "flex items-center justify-center",
+        "absolute z-50 top-0 left-1/2 transform -translate-x-1/2",
+        "rtl:flex-row-reverse"
+      )}
     >
       <div
-        className={`sticky px-4 py-2 top-6 flex  rounded-xl items-center  text-[--secondary-text-color] bg-[var(--secondary-background-color)]
-        rtl:flex-row-reverse`}
+        className={cn(
+          "px-4 py-2 flex items-center text-primary-text-color bg-primary-bg-color",
+          "sticky top-6 rounded-b-xl ",
+          "rtl:flex-row-reverse"
+        )}
       >
         <div
-          className="gap-4 flex
-          rtl:flex-row-reverse"
+          id="languages"
+          className={cn("gap-4 flex", "rtl:flex-row-reverse")}
         >
-          <div
-            onClick={() => changeLanguage("en")}
-            className={`relative flex justify-center w-fit cursor-pointer `}
-          >
-            <h1 className="relative c8 md:c4 z-20 text-whit">En</h1>
-            {language == "en" && (
-              <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
-            )}
-          </div>
-          <div
-            onClick={() => changeLanguage("ar")}
-            className={`aref-ruqaa px-[1%] relative flex justify-center w-fit cursor-pointer `}
-          >
-            <h1 className="relative c8 md:c4 z-20 text-whit"> عربي</h1>
-            {language == "ar" && (
-              <div className="absolute bottom-0 h-2 w-full z-10 bg-[--tertiary-background-color]" />
-            )}
-          </div>
+          <Language lang="en" />
+          <Language lang="ar" />
         </div>
-        <div className="mx-4 h-[15px] w-[0.5px] bg-gray-100">
-          
-        </div>
-        <div
-          onClick={() => setDarkTheme((prev) => !prev)}
-          className="flex gap-3"
-        >
-          {darkTheme ? <CiLight /> : <CiDark />}
-
+        <Separator />
+        <div onClick={handleChangeTheme}>
+          {theme === "black" ? <CiLight /> : <CiDark />}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Menu
+export default Menu;

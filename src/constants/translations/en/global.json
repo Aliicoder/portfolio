@@ -1,20 +1,20 @@
 {
   "intro": {
+    "welcome": "Welcome",
     "name": "I am Ali Fahmi",
-    "title": "Full stack developer",
-    "subTitle":"& Graphic designer",
-    "summary": "I specialize in creating dynamic, user-focused applications using the MERN stack, TypeScript, and Tailwind CSS. My expertise extends to handling advanced features like authentication, real-time communication with Socket.io, and seamless animations using Framer Motion. With a strong foundation in backend development, including MongoDB and Node.js, I take pride in building efficient, scalable solutions. My passion for learning and problem-solving drives me to deliver high-quality code and innovative projects."
+    "summary": "specialize in creating dynamic, user-focused applications using the MERN stack, TypeScript, and Tailwind CSS. My expertise extends to handling advanced features like authentication, real-time communication with Socket.io, and seamless animations using Framer Motion. With a strong foundation in backend development, including MongoDB and Node.js, I take pride in building efficient, scalable solutions. My passion for learning and problem-solving drives me to deliver high-quality code and innovative projects."
   },
   "buttons": {
     "downloadCV": "Download cv",
     "contact": "Contact me",
     "mailMe": "Email me"
   },
-  "headers":{
-    "aboutMe": "About me",
-    "myServices": "My Services",
-    "myTech":"My tech stack and technologies",
-    "myJourney":"My journey"
+  "headers": {
+    "aboutMe": "About ",
+    "myServices": "Services",
+    "myTech": "Technologies",
+    "journey": "Journey",
+    "latest": "Latest Work"
   },
   "aboutMe": "dedicated Computer Science and Engineering CSE student at BMSIT University, with a strong passion for applications development and graphic design. Alongside my academic pursuits, I have gained hands-on experience through projects involving modern technologies like React, Node.js, Express.js, MongoDB, and Tailwind CSS. I am enthusiasm for learning is evident in my exploration of advanced topics like real-time communication with web Sockets and implementing efficient authentication systems A problem solver at heart, I continually hones my skills to excel in the tech industry while contributing innovative ideas to my projects. ",
   "services": {
@@ -30,6 +30,11 @@
       "title": "Mobile development",
       "description": "I create cross-platform mobile applications using React Native. With a strong understanding of mobile development principles, I build responsive, intuitive, and high-performance apps that work seamlessly across both iOS and Android platforms. My skills include integrating native modules, optimizing app performance, and ensuring smooth navigation and UI components that provide a native-like experience."
     }
+  },
+  "latest": {
+    "title": "Front End Developer",
+    "description": "I built dynamic and responsive websites that deliver seamless user experiences across different devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back end, I work with Node.js, Express, and MongoDB to build scalable, efficient applications.",
+    "cta": "View work"
   },
   "journey": {
     "graphicDesign": {
@@ -63,6 +68,6 @@
     "phone": "+91 6366313572"
   },
   "footer": {
-    "text": "© 2024 Stunning Portfolio Co. All rights reserved."
+    "text": "All rights reserved."
   }
 }

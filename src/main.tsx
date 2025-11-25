@@ -1,14 +1,14 @@
-import { createRoot } from "react-dom/client"
-import "./index.css"
-import "./utils/i18n.ts"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Toaster } from "react-hot-toast"
-import App from "./App.tsx"
-import Contexts from "./context/Contexts.tsx"
+import "./globals.css";
+import "./utils/i18n.ts";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import App from "./App.tsx";
+import ThemeProvider from "./context/ThemeContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
-    <Contexts>
+    <ThemeProvider>
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
@@ -18,6 +18,6 @@ createRoot(document.getElementById("root")!).render(
           className: "noOutline",
         }}
       />
-    </Contexts>
+    </ThemeProvider>
   </BrowserRouter>
-)
+);
