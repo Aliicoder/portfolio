@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./styles/globals.css";
 import "./utils/i18n.ts";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";

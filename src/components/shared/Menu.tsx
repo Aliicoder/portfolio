@@ -52,7 +52,7 @@ function Menu() {
       >
         <div
           id="languages"
-          className={cn("gap-4 flex", "rtl:flex-row-reverse")}
+          className={cn("gap-4 flex l", "rtl:flex-row-reverse")}
         >
           <Language lang="en" />
           <Language lang="ar" />

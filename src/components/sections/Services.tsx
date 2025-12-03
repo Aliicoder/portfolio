@@ -26,10 +26,11 @@ const Scroll = () => {
 function Services() {
   const [t] = useTranslation();
   return (
-    <section className=" mt-10 container mx-auto">
-      <div className="p-4 pb-0">
-        <Section string={t("headers.myServices")} />
-      </div>
+    <section className="mt-12 container mx-auto">
+      <Section
+        className="ltr:font-montserrat font-bold"
+        string={t("headers.myServices")}
+      />
       <Scroll />
     </section>
   );

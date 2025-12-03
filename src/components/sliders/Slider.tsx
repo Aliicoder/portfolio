@@ -8,7 +8,7 @@ const Gradient = () => {
     <div
       className={cn(
         "absolute inset-0 z-10 ",
-        theme === "black" ? "black-gradient" : "gray-gradient"
+        theme === "black" ? "md:black-gradient" : "md:gray-gradient"
       )}
     />
   );

@@ -27,24 +27,24 @@ const Service = ({
       <CardContent className="p-4 text-[--primary-text-color] border rounded-xl">
         <Lottie className="p-12 md:p-16" animationData={animation} />
         <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
-          <h1
+          <h2
             className={cn(
               "font-bold line-clamp-1",
               "md:text-lg",
-              "rtl:text-right"
+              "rtl:text-right ltr:font-montserrat"
             )}
           >
             {t(title)}
-          </h1>
-          <h2
+          </h2>
+          <h4
             className={cn(
-              "text-sm line-clamp-4 text balance",
+              "text-sm line-clamp-4 text-balance",
               "md:text-normal",
-              "rtl:text-right"
+              "rtl:text-right ltr:font-montserrat"
             )}
           >
             {t(description)}
-          </h2>
+          </h4>
         </div>
       </CardContent>
     </Card>

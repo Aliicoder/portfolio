@@ -19,19 +19,34 @@ const Text = () => {
   return (
     <div className={cn("flex flex-col")}>
       <div className={cn("gap-2 py-4 flex flex-col")}>
-        <h1
+        <h6
           className={cn(
-            "text-md font-semibold text-tertiary-color ",
+            "text-md text-tertiary-color font-bold",
+            "ltr:font-montserrat",
             "md:text-lg"
           )}
         >
-          {t("intro.welcome")},
-        </h1>
-        <h1 className="text-xl font-semibold md:text-2xl">{t("intro.name")}</h1>
+          🖐️ {t("intro.welcome")}
+        </h6>
+        <h6
+          className={cn(
+            "text-xl font-semibold",
+            "md:text-2xl",
+            "ltr:font-montserrat"
+          )}
+        >
+          {t("intro.name")}
+        </h6>
       </div>
-      <p className={cn("mt-4 w-10/12 line-clamp-6 md:text-lg")}>
+      <h1
+        className={cn(
+          "mt-4 w-10/12 line-clamp-6 font-semibold",
+          "md:text-lg",
+          "ltr:font-montserrat"
+        )}
+      >
         {t("intro.summary")}
-      </p>
+      </h1>
     </div>
   );
 };
@@ -47,8 +62,8 @@ const Buttons = () => {
       <button
         onClick={downloadCV}
         className={cn(
-          "py-2 px-3 gap-2 flex justify-between items-center ",
-          "rounded-lg border",
+          "py-2 px-3 gap-2 flex justify-between items-center rounded-lg border",
+          "ltr:font-montserrat",
           "md:p-2"
         )}
       >
@@ -58,8 +73,8 @@ const Buttons = () => {
       <button
         onClick={contactOnWhatsApp}
         className={cn(
-          "py-2 px-3 gap-2 flex justify-between items-center ",
-          "bg-secondary-bg-color text-secondary-text-color shadow-none rounded-lg border",
+          "py-2 px-3 gap-2 flex justify-between items-center bg-secondary-bg-color text-secondary-text-color shadow-none rounded-lg border",
+          "ltr:font-montserrat",
           "md:p-2"
         )}
       >

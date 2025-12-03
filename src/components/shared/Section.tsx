@@ -14,7 +14,7 @@ const Section = ({
           "md:text-xl"
         )}
       >
-        {string}
+        {string}{" "}
       </h1>
     </header>
   );

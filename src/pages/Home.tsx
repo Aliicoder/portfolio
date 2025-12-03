@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { lazy } from "react";
 const Menu = lazy(() => import("@/components/shared/Menu"));
-const ScrollUp = lazy(() => import("@/components/shared/ScrollUp"));
+const ScrollUp = lazy(() => import("@/components/buttons/ScrollUp"));
 const Hero = lazy(() => import("@/components/sections/Hero"));
 const About = lazy(() => import("@/components/sections/About"));
 const Services = lazy(() => import("@/components/sections/Services"));
