@@ -23,7 +23,9 @@ const Language = ({ lang }: { lang: string }) => {
   const { language, changeLanguage } = useLanguage();
   return (
     <div
-      className={cn("w-fit flex justify-center", "relative cursor-pointer")}
+      className={cn(
+        "relative w-fit flex justify-center cursor-pointer font-semibold"
+      )}
       onClick={() => changeLanguage(lang)}
     >
       <h1 className={cn("relative z-20")}>{props[lang]}</h1>
@@ -31,9 +33,7 @@ const Language = ({ lang }: { lang: string }) => {
     </div>
   );
 };
-const Separator = () => {
-  return <div className={cn("mx-4 h-[15px] w-[0.5px] bg-gray-100")} />;
-};
+
 function Menu() {
   useMenu();
   const { theme, handleChangeTheme } = useTheme();
@@ -48,7 +48,7 @@ function Menu() {
     >
       <div
         className={cn(
-          "px-4 py-2 flex items-center text-primary-text-color bg-primary-bg-color",
+          "gap-4 px-4 py-2 flex items-center text-primary-text-color bg-primary-bg-color",
           "sticky top-6 rounded-b-xl ",
           "rtl:flex-row-reverse"
         )}
@@ -60,7 +60,6 @@ function Menu() {
           <Language lang="en" />
           <Language lang="ar" />
         </div>
-        <Separator />
         <div onClick={handleChangeTheme}>
           {theme === "black" ? <CiLight /> : <CiDark />}
         </div>

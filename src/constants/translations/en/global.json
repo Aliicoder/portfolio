@@ -2,64 +2,59 @@
   "intro": {
     "welcome": "Welcome",
     "name": "I am Ali Fahmi",
-    "summary": "specialize in creating dynamic, user-focused applications using the MERN stack, TypeScript, and Tailwind CSS. My expertise extends to handling advanced features like authentication, real-time communication with Socket.io, and seamless animations using Framer Motion. With a strong foundation in backend development, including MongoDB and Node.js, I take pride in building efficient, scalable solutions. My passion for learning and problem-solving drives me to deliver high-quality code and innovative projects."
+    "summary": "I specialize in creating dynamic, user-focused applications using the MERN stack, TypeScript, and Tailwind CSS. My expertise includes implementing advanced features such as authentication, real-time communication with Socket.io, and smooth animations using Framer Motion. With a strong foundation in backend development, including MongoDB and Node.js, I take pride in building efficient and scalable solutions. My passion for learning and problem-solving drives me to deliver high-quality code and innovative projects."
   },
   "buttons": {
-    "downloadCV": "Download cv",
-    "contact": "Contact me",
-    "showWork": "View work"
+    "downloadCV": "Download CV",
+    "contact": "Contact Me",
+    "showWork": "View Work"
   },
   "headers": {
-    "aboutMe": "About ",
+    "aboutMe": "About Me",
     "myServices": "Services",
     "myTech": "Technologies",
     "journey": "Journey",
     "latest": "Latest Work"
   },
-  "aboutMe": "dedicated Computer Science and Engineering CSE student at BMSIT University, with a strong passion for applications development and graphic design. Alongside my academic pursuits, I have gained hands-on experience through projects involving modern technologies like React, Node.js, Express.js, MongoDB, and Tailwind CSS. I am enthusiasm for learning is evident in my exploration of advanced topics like real-time communication with web Sockets and implementing efficient authentication systems A problem solver at heart, I continually hones my skills to excel in the tech industry while contributing innovative ideas to my projects. ",
+  "aboutMe": "I am a computer science and engineering student at BMSIT with a strong passion for application development and graphic design. Alongside my academic studies, I have gained hands-on experience through projects that utilize modern technologies such as React, Node.js, Express.js, MongoDB, and Tailwind CSS. As a problem-solver, I continuously work on developing my skills to excel in the tech field and contribute innovative ideas to my projects.",
   "services": {
     "uxUiDesign": {
-      "title": "UX & UI design",
-      "description": "I focus on creating intuitive and visually appealing designs that enhance the user experience. I am passionate about understanding the needs and behaviors of users to create seamless, user-centric interfaces. My skills encompass wireframing, prototyping, and conducting user research to ensure that the final product not only looks great but also serves its purpose effectively."
+      "title": "UX & UI Design",
+      "description": "I focus on creating intuitive and visually appealing designs that enhance the user experience. I am passionate about understanding user needs and behaviors to create seamless, user-centric interfaces. My skills include wireframing, prototyping, and conducting user research to ensure that the final product not only looks great but also serves its purpose effectively."
     },
     "webDevelopment": {
-      "title": "Web development",
-      "description": "I specialize in building dynamic and responsive websites that deliver seamless user experiences across different devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back end, I work with Node.js, Express, and MongoDB to build scalable, efficient applications."
+      "title": "Web Development",
+      "description": "I specialize in building dynamic and responsive websites that deliver seamless user experiences across various devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the backend, I work with Node.js, Express, and MongoDB to build scalable and efficient applications."
     },
     "mobileDevelopment": {
-      "title": "Mobile development",
-      "description": "I create cross-platform mobile applications using React Native. With a strong understanding of mobile development principles, I build responsive, intuitive, and high-performance apps that work seamlessly across both iOS and Android platforms. My skills include integrating native modules, optimizing app performance, and ensuring smooth navigation and UI components that provide a native-like experience."
+      "title": "Mobile Development",
+      "description": "I build cross-platform mobile applications using React Native. With a strong understanding of mobile development principles, I create responsive, intuitive, and high-performance apps that work seamlessly on both iOS and Android platforms. My skills include integrating native modules, optimizing app performance, and ensuring smooth navigation with UI components that provide a native-like experience."
     }
   },
   "latest": {
-    "title": "Front End Developer",
-    "description": "I built dynamic and responsive websites that deliver seamless user experiences across different devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back end, I work with Node.js, Express, and MongoDB to build scalable, efficient applications."
+    "title": "Front-End Developer",
+    "description": "I build dynamic and responsive websites that deliver seamless user experiences across various devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive, engaging interfaces that meet both functional and aesthetic goals. Additionally, I work with backend tools like Node.js, Express, and MongoDB to build scalable and efficient applications."
   },
   "journey": {
     "graphicDesign": {
-      "title": "Graphic design",
-      "years": "2020 - 2021",
-      "description": "In 2020, I embarked on my journey as a graphic designer, diving into the world of creativity and visual storytelling. Armed with a passion for design, I began exploring tools like Adobe Photoshop, Illustrator, and Canva, honing my skills in creating compelling visual content. I worked on projects ranging from logo design and branding to social media graphics, gradually developing an eye for aesthetics and detail."
+      "title": "Graphic Design",
+      "description": "I began my journey as a graphic designer, diving into the world of creativity and visual storytelling. Driven by a passion for design, I explored tools like Adobe Photoshop, Illustrator, and Canva, honing my skills in creating compelling visual content. I worked on projects ranging from logo design and branding to social media graphics, gradually developing a strong eye for aesthetics and detail."
     },
     "frontEnd": {
-      "title": "Front End Developer",
-      "years": "2021 - 2022",
-      "description": "I transitioned into the role of a front-end developer, expanding my skills from graphic design to crafting interactive and responsive user interfaces. Starting with foundational technologies like HTML, CSS, and JavaScript, I quickly mastered frameworks such as React.js, which became my go-to tool for building dynamic and efficient web applications."
+      "title": "Front-End Developer",
+      "description": "I transitioned into front-end development, expanding my abilities from graphic design to crafting interactive and responsive user interfaces. Starting with foundational technologies like HTML, CSS, and JavaScript, I quickly mastered frameworks such as React.js, which became my go-to tool for building dynamic and efficient web applications."
     },
     "backEnd": {
-      "title": "Back End Developer",
-      "years": "2021 - 2022",
-      "description": "I delved into backend development, broadening my expertise and gaining a deeper understanding of building robust and scalable web applications. I mastered Node.js and Express.js, laying the groundwork for creating efficient server-side logic and APIs. I worked extensively with databases like MongoDB, learning to design and manage schemas, implement CRUD operations, and optimize data handling for real-world applications."
+      "title": "Back-End Developer",
+      "description": "I delved into backend development, broadening my expertise and gaining a deeper understanding of building robust, scalable web applications. I mastered Node.js and Express.js, establishing a solid foundation for creating efficient server-side logic and APIs. I worked extensively with databases like MongoDB, learning to design and manage schemas, implement CRUD operations, and optimize data handling for real-world applications."
     },
     "fullStack": {
-      "title": "Full stack Developer",
-      "years": "2022 - 2023",
-      "description": "I evolved into a full-stack developer, seamlessly integrating my frontend and backend expertise to build complete, end-to-end web applications. Leveraging the MERN stack, I developed robust, dynamic, and scalable solutions, handling both the client-side and server-side with efficiency. My projects often involved implementing complex features, such as authentication systems."
+      "title": "Full-Stack Developer",
+      "description": "I evolved into a full-stack developer, seamlessly integrating my frontend and backend expertise to build complete end-to-end web applications. Leveraging the MERN stack, I developed robust, dynamic, and scalable solutions while handling both client-side and server-side responsibilities efficiently. Many of my projects involved implementing complex features such as authentication systems."
     }
   },
-
   "footer": {
     "message": "Learning in Progress",
-    "copyright": "All rights reserved"
+    "copyright": "All Rights Reserved"
   }
 }

@@ -9,11 +9,15 @@ const Image = () => {
   return (
     <div
       className={cn(
-        "basis-full flex justify-center items-center",
+        "basis-full  flex justify-center items-center",
         "md:basis-1/2"
       )}
     >
-      <img src={HeroImage} alt="hero-image" />
+      <img
+        className="size-[200px] object-cover md:size-auto "
+        src={HeroImage}
+        alt="hero-image"
+      />
     </div>
   );
 };

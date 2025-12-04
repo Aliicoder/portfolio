@@ -30,7 +30,7 @@ const MainBtn = ({
     <Comp
       {...(as === "a" ? { href, target } : { onClick })}
       className={cn(
-        "py-2 px-3 gap-2 flex justify-between items-center shadow-none rounded-lg border",
+        "py-2 px-3 gap-2 flex justify-between items-center shadow-none rounded-lg border font-semibold  text-sm md:text-base",
         "ltr:font-montserrat",
         "md:p-2",
         bgcolor,
