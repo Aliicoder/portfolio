@@ -8,7 +8,10 @@ import useTheme from "@/hooks/useTheme";
 const UnderLine = () => {
   return (
     <div
-      className={cn("w-full h-2 bg-tertiary-color", "absolute bottom-0 z-10")}
+      className={cn(
+        "w-full h-[2px] bg-tertiary-color",
+        "absolute bottom-0 z-10"
+      )}
     />
   );
 };
@@ -52,7 +55,7 @@ function Menu() {
       >
         <div
           id="languages"
-          className={cn("gap-4 flex l", "rtl:flex-row-reverse")}
+          className={cn("gap-4 flex", "rtl:flex-row-reverse")}
         >
           <Language lang="en" />
           <Language lang="ar" />

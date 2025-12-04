@@ -7,16 +7,17 @@ const Section = ({
   className?: string;
 }) => {
   return (
-    <header className={cn("p-4", "md:p-8 md:px-12", className)}>
+    <div className={cn("p-4", "md:p-8 md:px-12", className)}>
       <h1
         className={cn(
-          "text-lg font-semibold text-tertiary-color",
-          "md:text-xl"
+          "text-md font-bold text-tertiary-color",
+          "md:text-lg",
+          "ltr:font-montserrat"
         )}
       >
-        {string}{" "}
+        {string}
       </h1>
-    </header>
+    </div>
   );
 };
 

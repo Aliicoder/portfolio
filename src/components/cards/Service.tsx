@@ -29,7 +29,7 @@ const Service = ({
         <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
           <h2
             className={cn(
-              "font-bold line-clamp-1",
+              "text-md font-bold line-clamp-1",
               "md:text-lg",
               "rtl:text-right ltr:font-montserrat"
             )}
@@ -38,8 +38,8 @@ const Service = ({
           </h2>
           <h4
             className={cn(
-              "text-sm line-clamp-4 text-balance",
-              "md:text-normal",
+              "text-sm line-clamp-4 text-balance font-semibold opacity-90",
+              "md:text-base",
               "rtl:text-right ltr:font-montserrat"
             )}
           >

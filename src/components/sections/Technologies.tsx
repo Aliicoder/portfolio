@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { techStackSvgsPart1, techStackSvgsPart2 } from "@/constants/teckStack";
-import Slider from "../sliders/Slider";
-import Section from "../shared/Section";
+import Slider from "@/components/sliders/Slider";
+import Section from "@/components/shared/Section";
 function Technologies() {
   const [t] = useTranslation();
   return (

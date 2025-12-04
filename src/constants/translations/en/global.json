@@ -7,7 +7,7 @@
   "buttons": {
     "downloadCV": "Download cv",
     "contact": "Contact me",
-    "mailMe": "Email me"
+    "showWork": "View work"
   },
   "headers": {
     "aboutMe": "About ",
@@ -33,8 +33,7 @@
   },
   "latest": {
     "title": "Front End Developer",
-    "description": "I built dynamic and responsive websites that deliver seamless user experiences across different devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back end, I work with Node.js, Express, and MongoDB to build scalable, efficient applications.",
-    "cta": "View work"
+    "description": "I built dynamic and responsive websites that deliver seamless user experiences across different devices and platforms. With proficiency in front-end technologies such as React, HTML, CSS, and JavaScript, I create interactive and engaging interfaces that meet both functional and aesthetic goals. On the back end, I work with Node.js, Express, and MongoDB to build scalable, efficient applications."
   },
   "journey": {
     "graphicDesign": {
@@ -58,16 +57,9 @@
       "description": "I evolved into a full-stack developer, seamlessly integrating my frontend and backend expertise to build complete, end-to-end web applications. Leveraging the MERN stack, I developed robust, dynamic, and scalable solutions, handling both the client-side and server-side with efficiency. My projects often involved implementing complex features, such as authentication systems."
     }
   },
-  "contact": {
-    "title": "Get in touch",
-    "phoneNumber": "Phone number",
-    "email": "Email address",
-    "contactMe": "Contact me",
-    "cta": "I'd love to hear from you.",
-    "emailAddress": "alifahmiofficialacc@gmail.com",
-    "phone": "+91 6366313572"
-  },
+
   "footer": {
-    "text": "All rights reserved."
+    "message": "Learning in Progress",
+    "copyright": "All rights reserved"
   }
 }

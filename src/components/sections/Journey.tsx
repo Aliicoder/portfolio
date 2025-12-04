@@ -53,12 +53,19 @@ const Milestone = ({
       ></div>
 
       <div className={cn("px-8 py-12 flex flex-col gap-4")}>
-        <h4 className={cn("py-4 md:text-lg font-bold", "ltr:font-montserrat")}>
+        <h4
+          className={cn(
+            "py-4 text-md font-bold",
+            "md:text-lg",
+            "ltr:font-montserrat"
+          )}
+        >
           {title}
         </h4>
         <p
           className={cn(
-            "max-w-[900px] text-sm line-clamp-5 text-balance",
+            "max-w-[900px] text-sm line-clamp-5 text-balance font-semibold opacity-90",
+            "md:text-base",
             "ltr:font-montserrat"
           )}
         >

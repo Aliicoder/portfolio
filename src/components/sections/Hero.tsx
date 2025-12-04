@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { LuArrowUpRight } from "react-icons/lu";
 import { cn, contactOnWhatsApp, downloadCV } from "@/lib/utils";
+import MainBtn from "@/components/buttons/Main";
+import SecondaryBtn from "@/components/buttons/Secondary";
+import HeroImage from "@/assets/hero.png";
 const Image = () => {
   return (
     <div
@@ -10,7 +13,7 @@ const Image = () => {
         "md:basis-1/2"
       )}
     >
-      <img src="/index/main.png" alt="hero-image" />
+      <img src={HeroImage} alt="hero-image" />
     </div>
   );
 };
@@ -21,17 +24,17 @@ const Text = () => {
       <div className={cn("gap-2 py-4 flex flex-col")}>
         <h6
           className={cn(
-            "text-md text-tertiary-color font-bold",
+            "text-sm text-tertiary-color font-bold",
             "ltr:font-montserrat",
-            "md:text-lg"
+            "md:text-base"
           )}
         >
           🖐️ {t("intro.welcome")}
         </h6>
         <h6
           className={cn(
-            "text-xl font-semibold",
-            "md:text-2xl",
+            "text-md font-bold",
+            "md:text-lg",
             "ltr:font-montserrat"
           )}
         >
@@ -40,8 +43,8 @@ const Text = () => {
       </div>
       <h1
         className={cn(
-          "mt-4 w-10/12 line-clamp-6 font-semibold",
-          "md:text-lg",
+          "text-sm mt-4 w-10/12 line-clamp-6 font-semibold opacity-90",
+          "md:text-base",
           "ltr:font-montserrat"
         )}
       >
@@ -59,28 +62,18 @@ const Buttons = () => {
         "md:flex-row md:m-0 md:w-fit"
       )}
     >
-      <button
+      <SecondaryBtn
+        text={t("buttons.downloadCV")}
+        icon={<MdOutlineFileDownload className="rtl:-scale-x-100" />}
         onClick={downloadCV}
-        className={cn(
-          "py-2 px-3 gap-2 flex justify-between items-center rounded-lg border",
-          "ltr:font-montserrat",
-          "md:p-2"
-        )}
-      >
-        {t("buttons.downloadCV")}
-        <MdOutlineFileDownload className="rtl:-scale-x-100 " />
-      </button>
-      <button
+      />
+      <MainBtn
+        text={t("buttons.contact")}
+        bgcolor="bg-secondary-bg-color"
+        textColor="text-secondary-text-color"
+        icon={<LuArrowUpRight className="rtl:-scale-x-100" />}
         onClick={contactOnWhatsApp}
-        className={cn(
-          "py-2 px-3 gap-2 flex justify-between items-center bg-secondary-bg-color text-secondary-text-color shadow-none rounded-lg border",
-          "ltr:font-montserrat",
-          "md:p-2"
-        )}
-      >
-        {t("buttons.contact")}
-        <LuArrowUpRight className="rtl:-scale-x-100" />
-      </button>
+      />
     </div>
   );
 };

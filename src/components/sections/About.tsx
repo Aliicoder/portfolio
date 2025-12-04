@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import study from "@/constants/lottie/STUDY.json";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
-import Section from "../shared/Section";
+import Section from "@/components/shared/Section";
 
 const Image = () => {
   return (
@@ -21,9 +21,9 @@ const Text = () => {
   return (
     <div
       className={cn(
-        "basis-full flex justify-center items-center font-semibold",
+        "basis-full flex justify-center items-center font-semibold text-sm opacity-90",
         "ltr:font-montserrat",
-        "md:basis-1/2"
+        "md:basis-1/2 md:text-base"
       )}
     >
       <h5 className={cn("p-4 basis-full", " md:text-lg md:basis-4/6")}>
@@ -36,11 +36,8 @@ const Text = () => {
 function About() {
   const [t] = useTranslation();
   return (
-    <section className={cn("mx-auto container")}>
-      <Section
-        className="ltr:font-montserrat font-bold"
-        string={t("headers.aboutMe")}
-      />
+    <section className={cn("mt-12 mx-auto container")}>
+      <Section string={t("headers.aboutMe")} />
       <div
         className={cn(
           " flex justify-between flex-col-reverse flex-wrap",

@@ -1,36 +1,41 @@
 import { cn } from "@/lib/utils";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useTranslation } from "react-i18next";
-import Section from "../shared/Section";
+import Section from "@/components/shared/Section";
+import LatestWorkImage from "@/assets/latest-work.png";
+import SecondaryBtn from "@/components/buttons/Secondary";
 
 const LatestWork = () => {
   const [t] = useTranslation();
   return (
-    <div className="w-full gap-4 p-8 pt-0 flex flex-col items-center bg-blur-color">
-      <h2 className={cn("p-4 font-bold", "ltr:font-montserrat")}>
+    <div className="w-full gap-4 p-4 pt-0 flex flex-col items-center bg-blur-color">
+      <h2
+        className={cn(
+          "p-4 font-bold text-md",
+          "md:text-lg",
+          "ltr:font-montserrat"
+        )}
+      >
         {t("latest.title")}
       </h2>
       <p
         className={cn(
-          "py-0 text-balance text-sm text-center max-w-[700px] line-clamp-3",
-          "ltr:font-montserrat"
+          "py-0 text-balance text-sm text-center max-w-[700px] line-clamp-3 font-semibold opacity-90",
+          "ltr:font-montserrat",
+          "md:text-base"
         )}
       >
         {t("latest.description")}
       </p>
-      <button
+
+      <SecondaryBtn
+        className="my-2 w-full md:w-fit"
+        text={t("buttons.showWork")}
+        icon={<LuArrowUpRight className="rtl:-scale-x-100" />}
         onClick={() => {
           window.open("https://threephase.co", "_blank");
         }}
-        className={cn(
-          "mt-4 py-2 px-3 gap-2 flex justify-between items-center rounded-lg border",
-          "ltr:font-montserrat",
-          "md:p-2"
-        )}
-      >
-        {t("latest.cta")}
-        <LuArrowUpRight className="rtl:-scale-x-100" />
-      </button>
+      />
     </div>
   );
 };
@@ -55,8 +60,8 @@ const Latest = () => {
         </div>
         <img
           className="z-10 relative w-[500px]"
-          src="/imgs/latest.png"
-          alt=""
+          src={LatestWorkImage}
+          alt="latest-work-image"
         />
       </div>
       <LatestWork />

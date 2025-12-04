@@ -1,0 +1,4 @@
+Sitemap: https://alicoder.site/sitemap.xml
+User-agent: *
+Allow: /
+
