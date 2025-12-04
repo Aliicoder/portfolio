@@ -23,9 +23,7 @@ const Language = ({ lang }: { lang: string }) => {
   const { language, changeLanguage } = useLanguage();
   return (
     <div
-      className={cn(
-        "relative w-fit flex justify-center cursor-pointer font-semibold"
-      )}
+      className={cn("relative w-fit flex justify-center cursor-pointer")}
       onClick={() => changeLanguage(lang)}
     >
       <h1 className={cn("relative z-20")}>{props[lang]}</h1>
