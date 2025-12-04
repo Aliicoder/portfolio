@@ -1,21 +1,24 @@
-import LinkButton from "@/components/buttons/LinkButton"
-import { useEffect } from "react"
-import toast from "react-hot-toast"
+import MainBtn from "@/components/buttons/Main";
+import { LuArrowRight } from "react-icons/lu";
 
 function NotFoundPage() {
-  useEffect(()=>{
-    toast.error("Page not Found")
-  },[])
   return (
-    <div className="grid place-items-center h-lvh w-lvw text-white">
-    <div>
-        <h1 className="font-semibold c9 text-white">Page not found</h1>
-        <h1 className="text-center c7 text-slate-700">404</h1>
-        <LinkButton to={"/"} text="Go back" className="text-center font-semibold" direction={"left"}>
-        </LinkButton>
+    <div className=" flex flex-col justify-center items-center h-lvh w-lvw">
+      <div>
+        <h1 className="font-bold text-center text-8xl md:text-9xl">404</h1>
+        <h1 className=" my-4 font-semibold text-xl md:text-2xl text-center">
+          Page not found
+        </h1>
+        <MainBtn
+          as="a"
+          href="/"
+          text="Go back"
+          className="mt-12 text-center font-semibold"
+          icon={<LuArrowRight className="rtl:-scale-x-100" />}
+        />
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;
