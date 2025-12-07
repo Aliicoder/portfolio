@@ -18,6 +18,8 @@ const Image = () => {
         className="size-[200px] object-cover md:size-auto "
         src={HeroImage}
         alt="hero-image"
+        loading="eager"
+        decoding="async"
       />
     </div>
   );
@@ -94,8 +96,8 @@ function Hero() {
         <Image />
         <div
           className={cn(
-            "mt-8 p-4 flex flex-col basis-full justify-center",
-            "md:basis-1/2 "
+            "p-4 flex flex-col basis-full justify-center",
+            "md:basis-1/2 md:mt-8"
           )}
         >
           <Text />
