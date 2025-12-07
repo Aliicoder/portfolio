@@ -15,7 +15,7 @@ const Service = ({
   title: string;
   description: string;
 }) => {
-  const [t] = useTranslation();
+  const [t, { language }] = useTranslation();
   return (
     <Card
       className={cn(
@@ -24,14 +24,17 @@ const Service = ({
         className
       )}
     >
-      <CardContent className="p-4 text-[--primary-text-color] border rounded-xl">
+      <CardContent
+        style={{ direction: language === "ar" ? "rtl" : "ltr" }}
+        className="p-4 text-[--primary-text-color] border rounded-xl"
+      >
         <Lottie className="p-12 md:p-16" animationData={animation} />
         <div className="p-4 gap-4 flex flex-col rounded-lg  bg-[--blur-color]">
           <h2
             className={cn(
               "text-md font-bold line-clamp-1",
               "md:text-lg",
-              "rtl:text-right ltr:font-montserrat"
+              "ltr:font-montserrat"
             )}
           >
             {t(title)}
@@ -40,7 +43,7 @@ const Service = ({
             className={cn(
               "text-sm line-clamp-4 text-balance font-semibold opacity-90",
               "md:text-base",
-              "rtl:text-right ltr:font-montserrat"
+              "ltr:font-montserrat"
             )}
           >
             {t(description)}
