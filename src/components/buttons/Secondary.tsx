@@ -27,7 +27,7 @@ const SecondaryBtn = ({
         className
       )}
     >
-      {text}
+      <span className="rtl:pr-2 ltr:pl-2">{text}</span>
       {icon}
     </button>
   );

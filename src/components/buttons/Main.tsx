@@ -38,8 +38,8 @@ const MainBtn = ({
         className
       )}
     >
-      {text}
-      {icon}
+      <span className="rtl:pr-2 ltr:pl-2">{text}</span>
+      <span>{icon}</span>
     </Comp>
   );
 };

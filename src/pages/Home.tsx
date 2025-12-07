@@ -1,9 +1,9 @@
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
 import { cn } from "@/lib/utils";
 import { lazy } from "react";
 const Menu = lazy(() => import("@/components/shared/Menu"));
 const ScrollUp = lazy(() => import("@/components/buttons/ScrollUp"));
-const Hero = lazy(() => import("@/components/sections/Hero"));
-const About = lazy(() => import("@/components/sections/About"));
 const Services = lazy(() => import("@/components/sections/Services"));
 const Technologies = lazy(() => import("@/components/sections/Technologies"));
 const Journey = lazy(() => import("@/components/sections/Journey"));
